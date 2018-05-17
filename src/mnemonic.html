@@ -1,0 +1,43 @@
+    @@include('head.html', {
+      "title": "qiibee Web Wallet Backup"
+    })
+  <body>
+    @@include('header.html', {
+      "h1": "Unlock your Wallet"
+    })
+    @@include('unlock.html')
+    @@include('wallet-mnemonic.html', {
+      "h2": "Below you can see your wallet's backup phrase.",
+      "btnText": "Copy Backup Phrase",
+      "infoText": "The backup phrase can be used to restore your wallet in the app, on a new device or in a different browser."
+    })
+    @@include('footer.html')
+    <script>
+      var qb = new Qiibee().doWork();
+      wallet = qb.findWallet();
+      
+      if(typeof wallet === "undefined") {
+        qb.redirect('/');
+      }
+  
+      if(wallet) {
+        jQuery(function($) {
+          $( "#send-pin" ).on( "click", function() {
+            var pin = $("#pincode");
+            if(pin.val().length === 4) {
+              var decryptedWallet = qb.exportWallet(pin.val());
+              if(decryptedWallet) {
+                $( "#unlock-pin" ).hide();
+                $( "#mnemonic" ).val(decryptedWallet.mnemonic);
+                $( "#wallet-info" ).fadeIn();
+              } else {
+                $( ".text-error" ).fadeIn();
+              }
+            } 
+          });  
+        });
+      } 
+    </script>
+    
+  </body>
+</html>

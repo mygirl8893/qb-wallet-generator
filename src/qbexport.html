@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <!-- build:scripts -->
+    <script type="text/javascript" src="src/scripts/bundle.js"></script>
+    <script type="text/javascript" src="src/scripts/qiibee.js"></script>
+    <!-- endbuild -->
+    <script>
+      var qb = new Qiibee().doWork();
+      wallet = qb.findWallet();
+      var encryptedWallet = qb.exportEncryptedWallet();
+      qb.exportTo(encryptedWallet);
+    </script>
+  </body>
+</html>

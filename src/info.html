@@ -1,0 +1,27 @@
+    @@include('head.html', {
+      "title": "qiibee Web Wallet Information"
+    })
+  <body>
+    @@include('header.html', {
+      "h1": "My Wallet"
+    })
+    @@include('wallet-info.html', {
+      "h2": "Here you can see your public wallet address.",
+      "btnText": "Copy Address" 
+    })
+    @@include('footer.html')
+    <script>
+      var qb = new Qiibee().doWork();
+      wallet = qb.findWallet();
+      if(wallet) {
+        jQuery(function($) {
+          $( "#walletAddress" ).val(wallet.address);
+          var url = "https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl="+wallet.address+"&choe=UTF-8&chld=L|1";
+          $( "#QRcode" ).attr("src",url);
+        });
+      } else {
+        qb.redirect('/');
+      }
+    </script>
+  </body>
+</html>

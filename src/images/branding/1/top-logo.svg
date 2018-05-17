@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>58D58AB4-CEE2-4FEA-BFFB-A5B6EDD57016</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-21.0%" y="-15.0%" width="142.0%" height="142.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00A0E3" offset="0%"></stop>
+            <stop stop-color="#D82A90" offset="100%"></stop>
+        </linearGradient>
+        <path d="M53.7333333,20.2016667 L53.7333333,64.7508333 C53.7333333,66.7608333 55.135,68.2191667 57.0666667,68.2191667 C58.8325,68.2191667 60.1566667,67 60.37,65.255 C63.1633333,67.3466667 65.9008333,68.2191667 69.4975,68.2191667 C74.3708333,68.2191667 78.6408333,66.44 81.5141667,63.2158333 C84.4783333,59.9708333 85.7991667,55.8641667 85.7991667,49.9008333 C85.7991667,38.1325 80.1775,31.6508333 69.9675,31.6508333 C66.4625,31.6508333 63.7625,32.4591667 60.4,34.5783333 L60.4,20.2016667 C60.4,18.1208333 59.0291667,16.6666667 57.0666667,16.6666667 C55.1041667,16.6666667 53.7333333,18.1208333 53.7333333,20.2016667 M60.3333333,50.4383333 C60.3333333,42.3958333 63.5066667,38.3175 69.7666667,38.3175 C76.1566667,38.3175 79.1325,42.0833333 79.1325,50.17 C79.1325,57.0841667 75.4041667,61.5525 69.6325,61.5525 C63.8091667,61.5525 60.3333333,57.3983333 60.3333333,50.4383333 M40.4308333,34.6141667 C37.6358333,32.5233333 34.8991667,31.6508333 31.3025,31.6508333 C26.4283333,31.6508333 22.1591667,33.43 19.2858333,36.6533333 C16.3216667,39.9 15,44.0058333 15,49.9683333 C15,61.7375 20.6233333,68.2191667 30.8316667,68.2191667 C34.3383333,68.2191667 37.0383333,67.4108333 40.4,65.2916667 L40.4,79.6683333 C40.4,81.75 41.7708333,83.2033333 43.7325,83.2033333 C45.6958333,83.2033333 47.0666667,81.75 47.0666667,79.6683333 L47.0666667,35.1183333 C47.0666667,33.1091667 45.665,31.6508333 43.7325,31.6508333 C41.9675,31.6508333 40.6441667,32.87 40.4308333,34.6141667 M21.6666667,49.7 C21.6666667,42.785 25.3966667,38.3175 31.1675,38.3175 C36.9908333,38.3175 40.4675,42.4725 40.4675,49.4308333 C40.4675,57.4733333 37.2933333,61.5525 31.0333333,61.5525 C24.6433333,61.5525 21.6666667,57.7858333 21.6666667,49.7" id="path-3"></path>
+    </defs>
+    <g id="qbx-Wallet-Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-create-wallet" transform="translate(-658.000000, -24.000000)">
+            <g id="1.-title-section">
+                <g id="qb-icon" filter="url(#filter-1)" transform="translate(670.000000, 30.000000)">
+                    <circle id="background" fill="#F5F5F5" cx="50" cy="50" r="50"></circle>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="qb" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

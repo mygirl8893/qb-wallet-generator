@@ -1,0 +1,17 @@
+{
+	"1": {
+		"name": "qiibee",
+		"redirect": "https://qiibee.com",
+		"id": "1"
+	},
+	"100001": {
+		"name": "lattesso",
+		"redirect": "https://lattessocoin.com",
+		"symbol": "LTSO",
+		"id": "100001"
+	},
+	"999999": {
+		"name": "qiibee",
+		"redirect": "https://www.qiibee.com"
+	}
+}

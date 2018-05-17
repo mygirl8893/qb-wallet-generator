@@ -1,0 +1,44 @@
+    @@include('head.html', {
+      "title": "qiibee Web Wallet"
+    })
+    <body>
+    @@include('header.html', {
+      "h1": "Create your Wallet"
+    })
+    @@include('enter-pin.html', {
+      "h2": "Protect your wallet with a <br>4-digit PIN to keep it safe.<br><br>Make sure to create your wallet on your private device.",
+      "btnText": "Create Wallet" 
+    })    
+    @@include('footer.html')
+    <script>
+      var qb = new Qiibee().doWork();
+      wallet = qb.findWallet();
+      if(wallet) {
+        qb.redirectTo(wallet.address);
+      } else {
+        jQuery(function($) {
+          $('#pincode').on('input', function(event) {
+            event.stopPropagation();        
+            event.stopImmediatePropagation();
+            event.preventDefault();
+            var numStr = /^\d+$/;
+            if(!numStr.test( $(this).val() ) && !$('.text-error').is(":visible")) {
+              $( ".text-error" ).html('Please put in only digits for your PIN!');
+              $('.text-error').fadeIn().delay(2000).fadeOut(400);
+            } 
+             $('#pincode').val($('#pincode').val().replace(/[^\d]/g, ''));
+          });
+          $( "#send-pin" ).on( "click", function() {
+          var pin = $("#pincode");
+          if(pin.val().length === 4) {
+            var createdWallet = qb.createWallet(pin.val());
+            qb.redirectTo(createdWallet.address);
+          } else {
+            
+          }
+          });  
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+image: node:8.9.4
+
+pipelines:
+  branches:
+    production:
+    - step:
+        script:
+          - npm install
+          - npm run build
+          - apt-get update && apt-get install -y python-dev
+          - curl -O https://bootstrap.pypa.io/get-pip.py
+          - python get-pip.py
+          - pip install awscli
+          - aws s3 sync --delete ./dist/ s3://wallet.qiibee --acl bucket-owner-full-control --acl public-read
+          - aws cloudfront create-invalidation --distribution-id E3JIOOV8NKSWVJ --paths /*
