@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 **starting the project in dev mode**
 ```
-$ git clone git@bitbucket.org:qiibee/qbwallet.git
+$ git clone https://github.com/qiibee/qb-wallet.git
 $ cd to the root of the project
 $ npm install
 $ npm start
@@ -26,13 +26,13 @@ access http://localhost:3000
 
 **building the project in prod mode**
 ```
-$ git clone git@bitbucket.org:qiibee/qbwallet.git
+$ git clone https://github.com/qiibee/qb-wallet.git
 $ cd to the root of the project
 $ npm install
 $ npm run build
 ```
 ```
-set webserver root dir to: /src/ and access http://localhost
+set webserver root dir to: /dist/ and access http://localhost
 ```
 
 ### How to use Branding
