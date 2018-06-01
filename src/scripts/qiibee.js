@@ -35,10 +35,6 @@ function redirect(to) {
     }
 }
 
-function exportTo(wallet) {
-   window.location = "qb://?wallet=" + wallet.encrypted;
-}
-
 function getAllUrlParams() {
   var regex = /[?&]([^=#]+)=([^&#]*)/g,
     params = {},

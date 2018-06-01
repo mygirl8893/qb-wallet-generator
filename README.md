@@ -69,7 +69,6 @@ set webserver root dir to: /dist/ and access http://localhost
 | [index.html](src/index.html) | Mainly used to create / retrieve Wallet |
 | [info.html](src/info.html) | Show Wallet informations |
 | [mnemonic.html](src/mnemonic.html) | Show Wallet mnemonic phrase |
-| [qbexport.html](src/qbexport.html) | qiibee Export to Wallet App |
 
 
 
