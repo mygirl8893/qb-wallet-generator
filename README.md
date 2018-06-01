@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 **starting the project in dev mode**
 ```
-$ git clone https://github.com/qiibee/qb-wallet.git
+$ git clone https://github.com/qiibee/qb-wallet-generator.git
 $ cd to the root of the project
 $ npm install
 $ npm start
@@ -26,7 +26,7 @@ access http://localhost:3000
 
 **building the project in prod mode**
 ```
-$ git clone https://github.com/qiibee/qb-wallet.git
+$ git clone https://github.com/qiibee/qb-wallet-generator.git
 $ cd to the root of the project
 $ npm install
 $ npm run build
